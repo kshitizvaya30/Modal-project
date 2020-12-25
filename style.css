@@ -1,0 +1,67 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px ;
+}
+
+section{
+    
+    background-image: url(modal.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.modal h1{
+    border: 5px solid white;
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    width: 70%;
+    margin-left: 200px;
+    padding:10px;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.modal button{
+    font-size: 40px;
+    font-family: cursive;
+    background-color:black;
+    color: white;
+}
+
+.parent-modal{
+    background-color: white;
+    color:black;
+    font-family: cursive;
+    font-size: 30px;
+    width: 60%;
+    position: fixed;
+    top: 30%;
+    left: 20%;
+    display: none;
+    animation-name:pre;
+    animation-duration: 1s;
+}
+
+@keyframes pre{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 30%;
+    }
+}
+
+.X{
+    position:absolute;
+    top: 0px;
+    right:0;
+    cursor: pointer;
+}
+
